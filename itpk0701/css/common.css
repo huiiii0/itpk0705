@@ -1,0 +1,129 @@
+* {margin:0; box-sizing:border-box;}
+        ul,ol,li {list-style:none; margin:0; padding:0;}
+        /*사이드 로그인박스*/
+        .loginfixed { width: 8px; height: 100vh; position: fixed; z-index:  5; right: 0; background-color: #fff; border-left: 1px solid #bbb; }
+        .nextbox { position: absolute; top: 50%; transform: translateY(-50%); left: -21px; font-size: 18px; padding: 10px; background-color: #fff; height: 60px; line-height: 35px; color: #808464; border-left: 1px solid #bbb; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; z-index: 5; width: 20px; cursor: pointer; }
+        .fixloginbox { height: 145px; background-color: #EF554D; width: 145px; color: #fff; text-align: center; }
+        .fixloginbox > h3 { height: 55px; line-height: 55px; }
+        .fixloginbox > p { height: 50px; font-size: 13px; line-height: 150%; } 
+        .fixloginbox > button { width: 100px; height: 25px; line-height: 22px; color: #fff; background-color: #be3834; border: #AF322E; outline: none; cursor: pointer; }
+        .bixbox { width: 145px; height: 30px; border-top: 1px solid #bbb; font-size: 11px; line-height: 25px; padding: 0 10px; cursor: pointer; position: relative; }
+        .bixbox:nth-of-type(5) { height: 60%; padding-top: 10px;  }
+        .bixbox img { width: 125px; height: 330px; }
+        .bixbox:nth-of-type(6) { text-align: center; font-size:15px; line-height: 50px; }
+        .bixbox span { color: #F8ABAD; font-weight: bold; }
+        .bixbox i { position: absolute; right: 4px; top: 30%; color: #868686; font-size: 12px; }
+        .bixbox .fa-chevron-right { position: absolute; right: 9px; top: 30%; font-size: 10px; }
+        .bixbox .noab { position: static; color:#e46c52; }
+        .prev { position: absolute; display: none; }
+        .next { position: absolute; }
+        #topBtn { width: 50px; height: 50px; margin: 0 auto; }        
+
+        /*****헤더*****/
+        header {width:100%; height:auto;}
+        #topBanner {width:100%; height:50px; display:flex; flex-flow:row wrap; position:relative; justify-content:space-between;}        
+        #topBanner .box1 {width:50%; height:100%; background:#fbdad5; text-align:right}
+        #topBanner .box1 img {height:100%;}
+        #topBanner .box2 {width:50%; height:100%; background:#c2a59d; text-align:left; display:flex; flex-flow:row wrap;}
+        #topBanner .box3 {width:20px; height:20px; cursor: pointer;}
+        #topBanner .box2 img {height:100%;}
+        
+        
+
+        /*홈*/
+        #htopWrap {width:100%; height:32px; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+        #htop {width:980px; height:100%; margin:0 auto; display:flex; justify-content:space-between;}        
+        #home {width:220px; height:100%; display:flex;}
+        #home .box {width:33.3%; height:100%; text-align:center;}
+        #home .box:nth-of-type(1) {border-left:1px solid #ccc;}
+        #home .box:nth-of-type(2) {width:56%; border-left:1px solid #ccc; border-right:1px solid #ccc;}
+        #home .box:nth-of-type(2) a {color:red; font-weight:bold; border:none;}
+        #home .box:nth-of-type(4) {border-left:1px solid #ccc; border-right:1px solid #ccc;}
+        #home .box a {text-decoration:none; color:#555; font-size:12px; opacity:0.8;}
+
+        /*로그인*/
+        #login {width:483px; height:100%; position:relative;}
+        #login .login {display:flex; flex-flow:row wrap; justify-content:space-around;}
+        #login li {padding:1px; margin:1px;}
+        #login li a {text-decoration:none; color:#333; font-size:11px;}
+        #login .sbar a {color:#ccc; font-size:10px;}
+        #login .sub {position:absolute; z-index:3; border:2px solid #e38989; background:#fff; display:none; padding:5px;}
+
+        /*로고*/
+        #hsecWrap {width:100%; height:99px;}
+        #hsec {width:980px; height:100%; margin:0 auto; display:flex; justify-content:space-between;}
+        #logo {width:220px; height:100%;}
+        #logo a img {width:100%; height:100%;}
+
+        /*검색창*/
+        #serchWrap {width:450px; height:100%; display:flex; flex-flow:row wrap;}
+        #serchtop {width:100%; height:20%;}
+        #serch {width:100%; height:40%; margin:0 auto; border-bottom:2px solid #ef544d; display:flex; flex-flow:row wrap; justify-content:space-between;}
+        #serch input {border:none; width:87%; height:60%; margin:10px 0 0 10px;}
+        #serchbtn {width:10%; height:100%; text-align:center; font-size:26px;}
+        #serchbtn i {color:#ef544d; left:0;}
+        #serchBot {width:100%; height:40%;}
+        #serchBot ul {display:flex; flex-flow:row wrap; justify-content: center; font-weight: bold;}
+        #serchBot ul .sbar {color:skyblue; font-size:12px; margin:2px 0 0 0;}
+        #serchBot ul li a {text-decoration:none; color:skyblue; font-size:12px; padding:6px;}
+
+        /*광고배너*/
+        #ad {width:192px; height:100%;}
+        #ad img {margin:15px 0 0 8px;}
+        
+        /*카테고리*/
+        #hbotWrap {width:100%; height:46px; background:#ef544d;}
+        nav {width:980px; height:100%; margin:0 auto; display:flex;}
+
+        /*전체카테고리*/
+        #categoryAll {width:172px; height:100%; background:#c43730;  position:relative; text-align:center;}
+        #categoryAll:hover {background:rgba(0,0,0,0.6); cursor:pointer;}
+        #categoryAll:hover span {color:#fff1a2}        
+        #categoryAll span {color:#fff; margin:13px 0 0 0;}
+        #categoryAll span:after {content: "전체카테고리"; margin:0 0 0 5px; font-size:14px;}
+
+        /*전체카테고리서브*/
+        .categoryMenu {width:980px; height:700px; background:#fff; position:absolute; z-index:3; margin:45px 0 0 0; display:none;}
+        .categoryWrap {width:100%; height:100%; display:flex; border:2px solid #c43730;}
+        .categoryWrap h1 {width:100%; font-size:14px; padding:15px;}
+        .categoryWrap > .category1 {width:30%; height:100%; display:flex; flex-flow:row wrap; border-right:1px solid #ccc;}  
+        .categoryWrap > .category1 > .cate1Box1 {width:50%; height:100%;}
+        .categoryWrap > .category1 > .cate1Box2 {width:50%; height:100%;}
+        .categoryWrap > .category2 {width:20%; height:100%; border-right:1px solid #ccc;}
+        .categoryWrap > .category3 {width:20%; height:100%; border-right:1px solid #ccc;}
+        .categoryWrap > .category4 {width:20%; height:100%; border-right:1px solid #ccc;}
+        .categoryWrap > .category5 {width:20%; height:100%;}
+        .categoryWrap ul {padding:15px;}
+        .categoryWrap li a {text-decoration:none; color:#333; font-size:12px; letter-spacing: -1px;}
+                                
+        /*베스트셀러 등등*/
+        #category1 {width:377px; height:100%;}
+        #category1 ul {display:flex; flex-flow:row wrap; justify-content: space-evenly;}
+        #category1 ul li {line-height:42px;}
+        #category1 ul li a {text-decoration:none; color:#fff; font-size:14px; font-weight:bold;}
+
+        #category2Wrap {width:540px; height:100%; display:flex; flex-flow:row wrap; justify-content: end;}
+        #category2 {width:200px; height:100%;}
+        #category2 ul {display:flex; flex-flow:row wrap; justify-content: space-evenly;}
+        #category2 ul li {line-height:42px;}
+        #category2 ul li a {text-decoration:none; color:#fff1a2; font-size:14px; font-weight:bold;}
+
+        /*하단*/
+        footer {width:100%; height:220px; border-top:1px solid #ddd;}
+        #footerWrap {width:980px; height:100%; margin:0 auto;}
+        #footerWrap .fbox1 {width:100%; height:20%;}
+        #footerWrap .fbox1 .list_a {display:flex; flex-flow:row wrap; justify-content:space-between;}        
+        #footerWrap .fbox1 .list_a li {color:#333; font-size:10px; line-height:40px;}        
+        #footerWrap .fbox1 .list_a li a {text-decoration:none; color:#666; font-size:12px;}        
+        #footerWrap .fbox1 .list_a li a:hover {text-decoration:underline;}
+        #footerWrap .fbox1 .list_a .info a {color:#000; font-size:12px; font-weight:bold;}
+        #footerWrap .fbox2 {width:100%; height:50%; }
+        #footerWrap .fbox2 .list_b {display:flex; flex-flow:row wrap; justify-content:start;}
+        #footerWrap .fbox2 .list_b li {font-size:12px; padding:3px; margin:1px;}
+        #footerWrap .fbox2 .list_b li button {border:none; color:#fff; background:#555; font-size:10px; cursor:pointer; margin:0 0 0 5px;}
+        #footerWrap .fbox2 .list_b .a {border-left:1px solid #666; border-right:1px solid #555;}
+
+        #footerWrap .fbox2 .list_b li .sub li {font-size:10px; color:#666;}
+        #footerWrap .fbox3 {width:100%; height:30%;}
+        #footerWrap .fbox3 h6 {font-size:10px; color:#666}
+        #footerWrap .fbox3 p {font-size:10px; color:#999}

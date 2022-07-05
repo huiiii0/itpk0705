@@ -1,0 +1,351 @@
+/*****메인*****/
+main {width:100%; height:auto;}
+
+/*슬라이드*/
+#sliderWrap {width:100%; height:316px; position:relative;}   
+        
+#slideWrap {width:980px; height:316px; margin:0 auto; display:flex;}
+#slideImg {width:100%; height:316px; position:relative;}
+
+.slide {width:100%;}
+.slide li {width:100%; height:316px; position:absolute; left:0; top:0;}
+.slide li:not(:first-child) {display:none;}
+.slide li img {width:100%; height:100%;}
+
+#slideImg span {position: absolute; top:50%; display: block; font-size: 38px; color:#ccc; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-50%);}
+#slideImg span:hover {color:#666;}
+#slideImg .prev {left:0;}
+#slideImg .next {right:0;}
+
+/*랭킹박스*/
+#ranking {width:23%; height:100%; background:rgba(50,50,50,0.5); display:flex; flex-flow:row wrap;}
+#ranking:hover {cursor: pointer;}
+#ranking .ranWrap1 {width:100%; height:10%;  display:flex; flex-flow:row wrap; align-content:center; border-bottom:1px solid rgba(27, 27, 27, 0.4);}    
+#ranking .ranWrap1 h1 {margin:-15px 0 0 0; padding:10px;}
+#ranking .ranWrap1 h1 a {text-decoration:none; color:#fff1a2; font-size:15px;}
+
+#ranking .ranWrap2 {width:100%; height:10%; }
+#ranking .ranWrap2 ul {height:100%; display:flex; flex-flow:row wrap; text-align:center;}
+#ranking .ranWrap2 ul li {width:50%; color:#fff; font-size:12px; display:flex; flex-flow:row wrap; justify-content: center; align-content:center;}
+#ranking .ranWrap2 ul li:nth-of-type(1) {border:1px solid rgba(255,255,255,0.3); border-bottom:none;}
+#ranking .ranWrap2 ul li:nth-of-type(2) {border-bottom:1px solid rgba(255,255,255,0.3);}
+        
+#ranking .ranWrap3 {width:100%; height:80%; border:1px solid rgba(255,255,255,0.3); border-top:none;}
+#ranking .ranWrap3 ul {margin:10px 0 0 0;}
+#ranking .ranWrap3 li {width:218px; height:23px; line-height:30px;}
+#ranking .ranWrap3 a {text-decoration:none; color:#fff; font-size:11px;}
+#ranking .ranWrap3 a .no {display:block; float:left; width:24px; height:100%; text-align:right;}
+#ranking .ranWrap3 a .udWrap {display:block; float:left; white-space:nowrap; width:45px; height:100%;}
+#ranking .ranWrap3 a  .udWrap #iconUp {float:left; display:block; margin:10px 0 0 9px; color:red;}
+#ranking .ranWrap3 a  .udWrap #iconDown {float:left; display:block; margin:10px 0 0 9px; color:blue;}
+#ranking .ranWrap3 a  .udWrap #iconMi {float:left; display:block; margin:10px 0 0 9px; color:#333;}
+#ranking .ranWrap3 a em {display:block; float:left; margin-left:9px; font-size:10px;}
+#ranking .ranWrap3 a strong {display:block; float:left; width:147px; height:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+
+#ranking .ranWrap4 {width:100%; height:80%; display:none; border:1px solid rgba(255,255,255,0.3); border-top:none;}
+#ranking .ranWrap4 ul {margin:10px 0 0 0;}
+#ranking .ranWrap4 li {width:218px; height:23px; line-height:30px;}
+#ranking .ranWrap4 a {text-decoration:none; color:#fff; font-size:11px;}
+#ranking .ranWrap4 a .no {display:block; float:left; width:24px; height:100%; text-align:right;}
+#ranking .ranWrap4 a .udWrap {display:block; float:left; white-space:nowrap; width:45px; height:100%;}
+#ranking .ranWrap4 a  .udWrap #iconUp {float:left; display:block; margin:10px 0 0 9px; color:red;}
+#ranking .ranWrap4 a  .udWrap .new {float:left; display:block; margin:0px 0 0 9px; color:red; font-size:5px}
+#ranking .ranWrap4 a  .udWrap #iconDown {float:left; display:block; margin:10px 0 0 9px; color:blue;}
+#ranking .ranWrap4 a  .udWrap #iconMi {float:left; display:block; margin:10px 0 0 9px; color:#333;}
+#ranking .ranWrap4 a em {display:block; float:left; margin-left:9px; font-size:10px;}
+#ranking .ranWrap4 a strong {display:block; float:left; width:147px; height:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+
+/*슬라이드컨트롤러*/
+#sliderControl {width:100%; height:47px; background:#f7f7f7}
+#controlWrap {width:980px; height:100%; margin:0 auto; display:flex; flex-flow:row wrap; justify-content:start;}
+#controlWrap .cbox {width:19.4%; height:100%; border-top:1px solid black; display:flex; flex-flow:row wrap; justify-content:center; align-items: center;}
+#controlWrap .cbox:hover {cursor: pointer;}
+#controlWrap .cbox h1 {font-size:12px;}
+#controlWrap .cbox1 {width:22.4%; height:100%; border-top:1px solid black;}
+
+/*배너*/
+#bannerWrap {width:100%; height:180px;}
+#banner {width:980px; height:100%; margin:0 auto; display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;}
+#banner .bbox {width:320px; height:80px;}
+#banner .bbox img {width:100%; height:100%;}
+
+/*인터파크추천*/
+#recommendWrap {width:100%; height:360px; display:flex; flex-flow:row wrap; justify-content:space-around; align-items: center; position:relative;}        
+#recomend {width:980px; height:100%; margin:0 auto; display:flex;}
+
+#sideBanner {width:100px; height:70%; display:flex; flex-flow:row wrap; position:absolute; left:330px; top:10px}
+#sideBanner .boxwrap1 {width:100px; height:150px; position:relative; overflow:hidden;}    
+#sideBanner .boxwrap1 .sideslide {width:350px}
+#sideBanner .boxwrap1 .sideslide li {width:100px; height:150px; float:left;}
+#sideBanner .boxwrap1 .sideslide li img {width:100%; height:100%;}
+
+#sideBanner .boxwrap1 span {position: absolute; top:80%; display: block; font-size: 25px; color:#ccc; line-height: 20px; cursor: pointer; height: 20px; background:rgba(0,0,0,0.6)}
+#sideBanner .boxwrap1 span:hover {color:#666;}
+#sideBanner .boxwrap1 .sideprev {left:0;}        
+#sideBanner .boxwrap1 .sidenext {right:0;}
+#sideBanner .boxwrap1 .box1 {width:100%; height:80%; display:flex; overflow:hidden;}        
+#sideBanner .boxwrap1 .box1 li img {width:65%; height:100%;}        
+
+#sideBanner .boxwrap2 {width:100%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}
+
+#recomendBox {width:980px; height:100%; display:flex; flex-flow:row wrap;}
+#recomendBox .box1 {width:80%; height:100%;}
+#recomendBox .box1 > .box1 {width:100%; height:10%;}
+#recomendBox .box1 > .box1 h1 {background:url(img/ipkrecom.png) no-repeat; text-indent:-9999px; position:relative; left:40%; top:80%; z-index:1;}
+#recomendBox .box1 > .box1 span {float:right; margin:-16px 10px 0 0; font-size:12px; padding:0 6px 0 0}
+#recomendBox .box1 > .box1 i {float:right; margin:-14px 10px 0 0; font-size:12px; color:#666}
+#recomendBox .box1 > .box1 span a {text-decoration:none; color:#666;}
+#recomendBox .box1 > .box2 {width:100%; height:90%; border-top:1px solid black; display:flex; flex-flow:row wrap; justify-content:center; align-items:center; position:relative;}
+#recomendBox .box1 > .box2 span {position: absolute; top:50%; display: block; font-size: 38px; color:#ccc; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-50%);}
+#recomendBox .box1 > .box2 span:hover {color:#666;}
+#recomendBox .box1 > .box2 .aprev {left:0;}
+#recomendBox .box1 > .box2 .anext {right:0;}
+
+#recomendBox .box1 > .box2 .bookWrap {width:90%; height:85%; display:flex; flex-flow:row wrap; position:relative;}
+#recomendBox .box1 > .box2 .bookWrap .book {width:1000px; height:100%;  position: relative; overflow:hidden;}        
+#recomendBox .box1 > .box2 .bookWrap .book .bslide {width:4000px; height:500px;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li {width:510px; height:275px; float:left;display:flex;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxImg {width:40%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}        
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxImg img {width:80%; height:80%;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxTxt {width:50%; height:100%; display:flex; flex-flow:row wrap; align-content: center;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxTxt .lboxTxt1 {width:100%; height:50%; display:flex; flex-flow:row wrap; align-content:flex-end;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxTxt .lboxTxt1 h6 {margin:0 0 45px 0; color:#333;}
+#recomendBox .box1 > .box2 .bookWrap .book .bslide li .lboxTxt .lboxTxt2 {width:100%; height:40%; background:#eee; padding:10px; font-size:12px;}
+
+
+#recomendBox > .box2 {width:20%; height:100%; display:flex; flex-flow:row wrap;}
+#recomendBox > .box2 > .box1 {width:100%; height:12%; display:flex; justify-content:start; align-items:end;}
+#recomendBox > .box2 > .box1 h1 {font-size:12px;}
+#recomendBox > .box2 > .box2 {border-top:1px solid black; width:100%; height:88%; background:#ccc;}
+#recomendBox > .box2 > .box2 img {width:100%; height:100%}
+
+/*출판사초이스 등등*/
+#choiceWrap {width:100%; height:363px;}
+#choice {width:980px; height:100%; margin:0 auto; display:flex; flex-flow:row wrap; justify-content: space-between;}
+#choice .box1 {width:35%; height:100%; display:flex; flex-flow:row wrap;}
+#choice .box1 .box1 {width:100%; height:10%; display:flex; flex-flow:row wrap; align-items:end;}     
+#choice .box1 .box1 h1 {font-size:17px;}
+#choice .box1 .box1 span {color:red;}
+#choice .box1 .box2 {width:100%; height:90%; background:chartreuse; border:1px solid #ccc;}
+#choice .box1 .box2 img {width:100%; height:100%;}
+
+#choice .box2 {width:35%; height:100%; display:flex; flex-flow:row wrap;}
+#choice .box2 .box1 {width:100%; height:10%; display:flex; flex-flow:row wrap; align-items:end;}
+#choice .box2 .box1 h1 {font-size:17px;}
+#choice .box2 .box1 span {color:red;}
+#choice .box2 .box2 {width:400px; height:90%; border:1px solid #ccc; position:relative; overflow:hidden;}
+#choice .box2 .box2 .mslide {width:1300px; position:absolute;}
+#choice .box2 .box2 .mslide li {width:340px; height:330px; float:left; display:flex; flex-flow:column wrap;}
+#choice .box2 .box2 .mslide li .imgbox {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}
+#choice .box2 .box2 .mslide li .imgbox a img {width:90%; height:80%;}
+#choice .box2 .box2 .mslide li .lboxTxt1 {width:50%; height:50%; display:flex; flex-flow:column wrap; justify-content:end;}
+#choice .box2 .box2 .mslide li .lboxTxt1 h6 {font-size:12px; color:#666;}
+#choice .box2 .box2 .mslide li .lboxTxt1 h3 {font-size:15px; margin:0 0 20px 0;}
+#choice .box2 .box2 .mslide li .lboxTxt2 {width:50%; height:50%; display:flex; flex-flow:column wrap; justify-content:start;}
+#choice .box2 .box2 .mslide li .lboxTxt2 p {font-size:12px; margin:20px 0 0 0; color:#333}
+#choice .box2 .box2 span {position: absolute; top:50%; display: block; font-size: 38px; color:#ccc; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-50%);}
+#choice .box2 .box2 span:hover {color:#666;}
+#choice .box2 .box2 .prev {left:0;}
+#choice .box2 .box2 .next {right:0;}
+
+#choice .box3 {width:20%; height:100%; display:flex; flex-flow:row wrap;}
+#choice .box3 .box1 {width:100%; height:10%; display:flex; flex-flow:row wrap; align-items:end;}
+#choice .box3 .box1 h1 {font-size:17px;}
+#choice .box3 .box1 span {color:red;}
+
+#choice .box3 .box2 {width:100%; height:90%; border:1px solid #ccc; position:relative; overflow:hidden;}
+#choice .box3 .box2 span {position: absolute; top:50%; display: block; font-size: 38px; color:#ccc; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-50%);}
+#choice .box3 .box2 span:hover {color:#666;}
+#choice .box3 .box2 .hprev {left:0;}
+#choice .box3 .box2 .hnext {right:0;}
+#choice .box3 .box2 .hslide {width:1000px; position:absolute;}
+#choice .box3 .box2 .hslide li {width:195px; height:330px; float:left;}
+#choice .box3 .box2 .hslide li .imgbox {width:100%; height:70%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}
+#choice .box3 .box2 .hslide li .imgbox a img {width:90%; height:80%;}
+#choice .box3 .box2 .hslide li .lboxTxt1 {width:100%; height:20%; display:flex; flex-flow:row wrap; align-items:center;}
+#choice .box3 .box2 .hslide li .lboxTxt1 h3 {font-size:15px; text-align:center;}
+#choice .box3 .box2 .hslide li .lboxTxt2 {width:100%; height:10%; display:flex; flex-flow:row wrap; align-items:center; justify-content:center;}
+#choice .box3 .box2 .hslide li .lboxTxt2 h6 {font-size:12px; color:#666; margin:0 0 20px 0}
+
+/*초이스 밑 배너이미지*/
+#bannerImage {width:100%; height:145px; margin:10px 0 0 0}        
+#choiceBanner {width:980px; height:100%; background:wheat; margin:0 auto;}
+#choiceBanner a img {width:100%; height:100%;}
+
+/*분야별추천*/
+#fieldWrap {width:100%; height:482px; display:flex; flex-flow:column-reverse;}
+#field {width:980px; height:95%; margin:0 auto; display:flex; flex-flow:row wrap; position:relative;}
+#field .fbox1 {width:100%; height:10%; display:flex; flex-flow:row wrap; justify-content:center; position:relative;}
+#field .fbox1 h1 {font-size:22px; color:#555; text-align:center}
+#field .fbox1 span {color:red;}
+#field .fbox1 .titleBox {width:15%; height:auto; background:#fff; position:absolute; margin:35px 0 0 0}    
+
+#field .section {width:980px; height:70%; border-top:1px solid #000;}
+#field .section #booklist {display:flex; flex-flow:row wrap; justify-content:space-around; align-items:flex-end; height:50px; border-bottom:1px solid #ccc;}
+#field .section #booklist li {width:15%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:flex-end; font-size:12px; padding:0 0 7px 0;}
+#field .section #booklist li:nth-of-type(1) {border-bottom:2px solid #e66a57; color:#e66a57}
+#field .section #booklist li:hover {cursor: pointer;}
+#field .section #list_a {width:980px; height:85%; }
+#field .section #list_a .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section #list_b {width:980px; height:85%; display:none;}
+#field .section #list_b .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section #list_c {width:980px; height:85%; display:none;}
+#field .section #list_c .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section #list_d {width:980px; height:85%; display:none;}
+#field .section #list_d .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section #list_e {width:980px; height:85%; display:none;}
+#field .section #list_e .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section #list_f {width:980px; height:85%; display:none;}
+#field .section #list_f .box {width:15%; height:90%; background:#eee; margin:15px 5px 5px 10px; float:left;}
+#field .section .box {display:flex; flex-flow:row wrap; justify-content:center; text-align:center;}
+#field .section .box .imgbox {width:100%; height:93%;}
+#field .section .box .boxTxt {width:100%; height:7%;}
+#field .section .box .boxTxt p {font-size:12px; text-align:center;}
+#field .section .box a img {margin:10px 0 0 0;}
+#field .section .box h3 {font-size:10px;}
+
+
+#field .fbox4 {width:100%; height:20%; background:blue; margin:15px 0 0 0;}
+#field .fbox4 img {width:100%; height:100%;}
+
+/*이달의 책*/
+#monthWrap {width:100%; height:360px;}
+#month {width:980px; height:100%; margin:40px auto; display:flex; flex-flow:row wrap; justify-content:space-between;}
+#month .monthRec {width:45%; height:100%; display:flex; flex-flow:row wrap;}
+#month .monthRec .box1 {width:100%; height:10%; display:flex; flex-flow:row wrap; justify-content:space-between; align-items:flex-end; border-bottom:1px solid #000; position:relative;}
+#month .monthRec .box1 h1 {font-size:17px;}
+#month .monthRec .box1 h1 span {color:red;}
+#month .monthRec .box1 .more {font-size:12px; margin:0 30px 0 0;}
+#month .monthRec .box1 .mprev {position: absolute; top:50%; display: block; font-size: 12px; color:#aaa; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-25%); right:12px; font-weight:bold;}
+#month .monthRec .box1 .mnext {position: absolute; top:50%; display: block; font-size: 12px; color:#aaa; line-height: 40px; cursor: pointer; height: 50px; transform: translateY(-25%); right:0; font-weight:bold;}
+#month .monthRec .box1 span {font-weight:bold;}
+#month .monthRec .box1 span:hover {color:#666}
+
+#month .monthRec .box2 {width:441px; height:324px; position:relative; overflow:hidden;}
+#month .monthRec .box2 .moslide {width:1900px;}
+#month .monthRec .box2 .moslide li {width:441px; height:324px; float:left; display:flex; flex-flow:row wrap;}
+#month .monthRec .box2 .moslide li .mbox1 {width:100%; height:50%;  display:flex; flex-flow:row wrap;}
+#month .monthRec .box2 .moslide li .mbox1 .imgbox {width:40%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}
+#month .monthRec .box2 .moslide li .mbox1 .imgbox a img {width:70%; height:70%; margin:0 0 0 20px}
+#month .monthRec .box2 .moslide li .mbox1 .boxTxt {width:60%; height:100%; display:flex; flex-flow:row wrap; align-content: center;}
+#month .monthRec .box2 .moslide li .mbox1 .boxTxt h3 {font-size:15px;}
+#month .monthRec .box2 .moslide li .mbox1 .boxTxt p {font-size:13px;}
+#month .monthRec .box2 .moslide li .mbox2 {width:100%; height:50%; display:flex; flex-flow:row wrap;}
+#month .monthRec .box2 .moslide li .mbox2 .imgbox {width:40%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}
+#month .monthRec .box2 .moslide li .mbox2 .imgbox a img {width:70%; height:70%; margin:0 0 0 20px}
+#month .monthRec .box2 .moslide li .mbox2 .boxTxt {width:60%; height:100%; display:flex; flex-flow:row wrap; align-content: center;}
+#month .monthRec .box2 .moslide li .mbox2 .boxTxt h3 {font-size:15px;}
+#month .monthRec .box2 .moslide li .mbox2 .boxTxt p {font-size:13px;}
+
+#month .monthSer {width:50%; height:100%;}
+#month .monthSer .section {width:100%; height:70%;}
+#month .monthSer .section #booklist {display:flex; flex-flow:row wrap; justify-content:start; align-items:flex-end; height:36px;}
+#month .monthSer .section #booklist li {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; align-items:flex-end; font-size:12px; padding:0 0 7px 0; border-bottom:1px solid #000;}
+#month .monthSer .section #booklist li:first-child {border:1px solid #000; border-bottom:none;}
+#month .monthSer .section #booklist li:hover {cursor: pointer;}
+#month .monthSer .section #list_a {width:100%; height:85%;}
+#month .monthSer .section #list_a .box {width:21.7%; height:80%; margin:55px 5px 5px 10px; float:left; display:flex; flex-flow:row wrap;}
+#month .monthSer .section #list_a .box img {width:80%; height:90%; margin:0 0 0 10px}
+#month .monthSer .section #list_a .box h3 {font-size:12px; text-align:center;}
+#month .monthSer .section #list_a .box p {font-size:10px; margin:0 0 0 40px;}
+#month .monthSer .section #list_b {width:100%; height:85%; display:none;}
+#month .monthSer .section #list_b .box {width:21%; height:80%; margin:55px 5px 5px 10px; float:left; display:flex; flex-flow:row wrap;}
+#month .monthSer .section #list_b .box img {width:80%; height:90%; margin:0 0 0 10px}
+#month .monthSer .section #list_b .box h3 {font-size:12px; text-align:center;}
+#month .monthSer .section #list_b .box p {font-size:10px; margin:0 0 0 40px;}
+
+
+
+/*CD/DVD/특별판*/
+#etcWrap {width:100%; height:600px;}
+#etc {width:980px; height:100%; margin:0 auto; display:flex; flex-flow:row wrap; justify-content:space-between; position:relative;}
+#etc .etcbox {width:33%; height:100%; display:flex; flex-flow:row wrap; align-content: space-between;}
+#etc .etcbox .boxTitle {width:100%; height:30px; display:flex; flex-flow:row wrap; align-items:flex-end; border-bottom:1px solid #000;}
+#etc .etcbox .boxTitle > h1 {font-size:17px;}
+
+#etc .etcbox .box1 {width:100%; height:80%; display:flex; flex-flow:row wrap; align-content:flex-start; position:relative; overflow:hidden;}
+#etc .etcbox .box1 span {position: absolute; top:50%; display: block; font-size: 25px; color:#aaa; line-height: 40px; cursor: pointer; height: 50px;}
+#etc .etcbox .box1 span:hover {color:#666;}
+#etc .etcbox .box1 .spprev {left:0;}
+#etc .etcbox .box1 .spnext {right:0;}
+
+
+#etc .etcbox .box1 .boxTitle {width:323.5px; height:30px;display:flex; flex-flow:row wrap; justify-content:space-between; align-content: flex-end; border-bottom:1px solid #000;}
+#etc .etcbox .box1 .boxTitle h1 {font-size:17px;}
+#etc .etcbox .box1 .boxTitle span {font-size:12px; color:#666; margin:10px 0 0 0;}
+#etc .etcbox .box1 .box1Wrap {width:323.5px; height:320px; position:relative; overflow:hidden; background:#eee;}
+#etc .etcbox .box1 .box1Wrap span {position: absolute; top:50%; display: block; font-size: 25px; color:#aaa; line-height: 40px; cursor: pointer; height: 50px;}
+#etc .etcbox .box1 .box1Wrap span:hover {color:#666}
+#etc .etcbox .box1 .box1Wrap .eprev1 {left:0;}
+#etc .etcbox .box1 .box1Wrap .enext1 {right:0;}
+
+#etc .etcbox .box1 .box1Wrap .eprev2 {left:0;}
+#etc .etcbox .box1 .box1Wrap .enext2 {right:0;}
+
+#etc .etcbox .box1 .box1Wrap .eslide1 {width:1200px;}
+#etc .etcbox .box1 .box1Wrap .eslide1 li {width:323.5px; height:320px;float:left; display:flex; flex-flow:row wrap; justify-content:center;}
+#etc .etcbox .box1 .box1Wrap .eslide1 li img {width:120%; height:90%; margin:10px 0 0 -10px}
+#etc .etcbox .box1 .box1Wrap .eslide1 li h3 {font-size:12px; text-align:center; width:100%;}
+#etc .etcbox .box1 .box1Wrap .eslide1 li p {font-size:10px;}
+
+#etc .etcbox .box1 .box1Wrap .eslide2 {width:1200px;}
+#etc .etcbox .box1 .box1Wrap .eslide2 li {width:323.5px; height:320px; float:left; display:flex; flex-flow:row wrap; justify-content:center;}
+#etc .etcbox .box1 .box1Wrap .eslide2 li img {width:120%; height:90%; margin:10px 0 0 -10px}
+#etc .etcbox .box1 .box1Wrap .eslide2 li h3 {font-size:12px; text-align:center; width:100%;}
+#etc .etcbox .box1 .box1Wrap .eslide2 li p {font-size:10px;}
+
+
+#etc .etcbox .box1 .box1Wrap_b1 {width:100%; height:140px; display:flex; flex-flow:row wrap; background:#eee;}
+#etc .etcbox .box1 .box1Wrap_b1 .box1 {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center;  border-top:1px solid #ddd}
+#etc .etcbox .box1 .box1Wrap_b1 .box1 a img {width:70px; height:80px; margin:10px 0 0 0;}
+#etc .etcbox .box1 .box1Wrap_b1 .box1 h3 {font-size:10px; text-align:center}
+
+#etc .etcbox .box1 .box1Wrap_b1 .box2 {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; border-top:1px solid #ddd}
+#etc .etcbox .box1 .box1Wrap_b1 .box2 a img {width:70px; height:80px; margin:10px 0 0 0;}
+#etc .etcbox .box1 .box1Wrap_b1 .box2 h3 {font-size:10px; text-align:center; margin:-20px 0 0 0;}
+
+#etc .etcbox .box1 .box1Wrap_b2 {width:100%; height:140px; display:flex; flex-flow:row wrap; background:#eee;}
+#etc .etcbox .box1 .box1Wrap_b2 .box1 {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; border-top:1px solid #ddd}
+#etc .etcbox .box1 .box1Wrap_b2 .box1 a img {width:70px; height:80px; margin:10px 0 0 0;}
+#etc .etcbox .box1 .box1Wrap_b2 .box1 h3 {font-size:10px; text-align:center}
+
+#etc .etcbox .box1 .box1Wrap_b2 .box2 {width:50%; height:100%; display:flex; flex-flow:row wrap; justify-content:center; border-top:1px solid #ddd}
+#etc .etcbox .box1 .box1Wrap_b2 .box2 a img {width:70px; height:80px; margin:10px 0 0 0;}
+#etc .etcbox .box1 .box1Wrap_b2 .box2 h3 {font-size:10px; text-align:center; margin:-20px 0 0 0;}
+
+#etc .etcbox .box1 .spWrap {width:323.5px; height:520px;}
+#etc .etcbox .box1 .spWrap .eslide3 {width:1000px; position:absolute;}
+#etc .etcbox .box1 .spWrap .eslide3 li {width:323.5px; height:520px; background:#eee; float:left; display:flex; flex-flow:row wrap; justify-content:center;}
+#etc .etcbox .box1 .spWrap .eslide3 li a img {width:200px; height:250px; margin:20px 0 0 0;}
+#etc .etcbox .box1 .spWrap .eslide3 li h6 {position:absolute; margin:300px 0 0 0; color:navy; font-size:17px; border-bottom:1px solid #000;}
+#etc .etcbox .box1 .spWrap .eslide3 li h3 {font-size:12px; text-align:center; width:100%;}
+#etc .etcbox .box1 .spWrap .eslide3 li p {font-size:11px; text-align:center; margin:-70px 0 0 0}
+
+
+#etc .etcbox .box2 {width:100%; height:15%;}
+#etc .etcbox .box2 a img {width:100%; height:100%;}
+
+/*서비스&헤택*/
+#serviceWrap {width:100%; height:150px; margin:0 0 30px 0;}
+#service {width:980px; height:100%; margin:0 auto; display:flex; flex-flow:row wrap;}
+#service .boxTitle {width:100%; height:25%; display:flex; flex-flow:row wrap; justify-content:space-between; align-items:end; border-bottom:2px solid #000;}
+#service .boxTitle h1 {font-size:22px;}
+#service .boxTitle p {font-size:12px;}
+#service .boxTitle p span {font-size:10px; color:#333;}
+#service .boxTitle p .right {background:#333; border-radius:50%; color:#fff; padding:0 1.5px 1.5px 1.5px;}
+
+#service .servicebox {width:100%; height:85%;}
+#service .servicebox .sermenu {display:flex; flex-flow:row wrap; justify-content:start;}
+#service .servicebox .sermenu li {margin:15px 53px 0 0; font-size:15px;}        
+#service .servicebox .sermenu li td {font-size:12px;}                
+#service .servicebox .sub > li {font-size:10px; color:#666; line-height:5px;}
+#service .servicebox .sub > li:hover {color:#000; cursor: pointer;}                
+#service .servicebox .sub .rotate:hover img {transform:rotate(360deg); transition:all 0.7s}
+
+
+/*쿠폰/상품권*/
+#friendWrap {width:100%; height:59px; background:#58cfc7;}
+#friendbox {width:980px; height:100%; margin:0 auto; background:#fff; display:flex; flex-flow:row wrap; justify-content:space-between;}
+#friendbox .box {width:49.9%; height:100%; background:#58cfc7; display:flex; flex-flow:row wrap; justify-content:center; align-items:center;}        
+#friendbox .box h1 {font-size:16px; color:#fff;}
+#friendbox .box h1 span {color:yellow}
